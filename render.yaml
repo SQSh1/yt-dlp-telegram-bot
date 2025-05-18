@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: yt-dlp-telegram-bot
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
